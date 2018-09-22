@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  	devise_for :users
+	resources :pins do
+		member do
+			put "Like", to: "pins#upvote"
+		end
+	end
 
-  	get 'home/index'
-
-  	get 'login/auth'
-
-  	root 'home#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	root "pins#index"
 end

@@ -1,0 +1,340 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"do",
+				"do"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"Buffer",
+				"BufferedWriter"
+			],
+			[
+				"File",
+				"FileInputStream"
+			],
+			[
+				"dire",
+				"diretório"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"t_",
+				"t_pswd"
+			],
+			[
+				"read",
+				"readLine"
+			],
+			[
+				"writ",
+				"writeBytes"
+			],
+			[
+				"is",
+				"isDirectory"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"to",
+				"toString"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "routes",
+		"selected_items":
+		[
+			[
+				"routes",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"add ",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"add repository https://github.com/n1k0/SublimeHighlight/tree/python3",
+			"add repository",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/pins/show.html.haml",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/controllers/pins_controller.rb",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/pins/index.html.haml",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/config/routes.rb",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/Gemfile",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/assets/stylesheets/application.css.scss",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/layouts/application.html.haml",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/assets/javascripts/pins.coffee",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/assets/javascripts/application.js",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/pins/edit.html.haml",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/pins/_form.html.haml",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/models/pin.rb",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/views/pins/new.html.haml",
+		"/etc/i3/config",
+		"/home/peterson/Downloads/asd/saidad.txt",
+		"/home/peterson/Downloads/asd/saidab.txt",
+		"/home/peterson/Downloads/asd/saidaq.txt",
+		"/home/peterson/Downloads/asd/saidap.txt",
+		"/home/peterson/Downloads/asd/saidao.txt",
+		"/home/peterson/Downloads/asd/saidan.txt",
+		"/home/peterson/Downloads/asd/saidam.txt",
+		"/home/peterson/Downloads/asd/saidal.txt",
+		"/home/peterson/Downloads/asd/saidak.txt",
+		"/home/peterson/Downloads/asd/saidaj.txt",
+		"/home/peterson/Downloads/asd/saidai.txt",
+		"/home/peterson/Downloads/asd/saidah.txt",
+		"/home/peterson/Downloads/asd/saidag.txt",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/app/models/user.rb",
+		"/home/peterson/Downloads/asd/saidaa.txt",
+		"/home/peterson/Downloads/asd/saidac.txt",
+		"/home/peterson/Downloads/asd/saidae.txt",
+		"/home/peterson/Downloads/asd/saidaf.txt",
+		"/home/peterson/Faculdade/RPII/PetFuckingKeepers/pin_board/config/environments/development.rb",
+		"/home/peterson/Faculdade/AED/Exemplos/listaLigada.c",
+		"/home/peterson/Faculdade/AED/Exemplos/usaListaLigadaInterativo.c",
+		"/home/peterson/Faculdade/AED/Exemplos/listaSequencial.c",
+		"/home/peterson/.config/sublime-text-3/Packages/User/c.sublime-build",
+		"/home/peterson/Faculdade/AED/Exemplos/OrdemDosMetodos.h",
+		"/home/peterson/Faculdade/AED/Exemplos/alocarLiberarMemoria.c",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/controllers/pins_controller.rb",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/views/pins/_form.html.haml",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/views/pins/new.html.haml",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/views/pins/index.html.haml",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/config/routes.rb",
+		"/home/peterson/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/peterson/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/peterson/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/peterson/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/db/migrate/20160930201902_create_pins.rb",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/Gemfile",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/views/new.html.haml",
+		"/home/peterson/.config/sublime-text-3/Packages/User/Ruby Haml.sublime-settings",
+		"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board/app/models/pin.rb",
+		"/home/peterson/WorkingSpace/Redes/WebServer.java",
+		"/home/peterson/.config/sublime-text-3/Packages/Highlight/SublimeHighlight.sublime-settings",
+		"/home/peterson/WorkingSpace/Redes/restrito/index.html",
+		"/home/peterson/WorkingSpace/Redes/NewAge/WebServer.java",
+		"/home/peterson/WorkingSpace/Redes/index.html",
+		"/home/peterson/WorkingSpace/Redes/diretorio/index.html",
+		"/home/peterson/WorkingSpace/Redes/config.html",
+		"/home/peterson/WorkingSpace/RPII/PetKeepers/app/controllers/login_controller.rb",
+		"/home/peterson/WorkingSpace/RPII/PetKeepers/app/controllers/home_controller.rb",
+		"/home/peterson/WorkingSpace/RPII/PetKeepers/config/routes.rb",
+		"/home/peterson/WorkingSpace/RPII/PetKeepers/app/views/home/index.html.erb",
+		"/home/peterson/WorkingSpace/RPII/PetKeepers/app/controllers/application_controller.rb",
+		"/home/peterson/WorkingSpace/Redes/StandaloneHttpServer.java",
+		"/home/peterson/WorkingSpace/Redes/Configura.java",
+		"/home/peterson/WorkingSpace/Redes/WebServerC.java",
+		"/home/peterson/WorkingSpace/FilaDePrioridade.c",
+		"/home/peterson/WorkingSpace/usaFilaDePrioridade.c",
+		"/home/peterson/WorkingSpace/FilaDePrioridade.h",
+		"/home/peterson/WorkingSpace/listaDupla.c"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/peterson/WorkingSpace/RPII/PetFuckingKeepers/pin_board"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"e7e7e7",
+			"tab",
+			"routes.rb",
+			"sidebar",
+			"#",
+			"\n#",
+			"'\n",
+			"precision",
+			"monthlyPayment",
+			"high",
+			"low",
+			"monthlyInterestRate",
+			"location",
+			"system.out",
+			"iAmError",
+			"theWorld",
+			"gappy",
+			"uepa",
+			"System.out.println",
+			"carregar",
+			"()",
+			"log",
+			"handler",
+			"log"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/c.sublime-build",
+	"project": "manifest.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 171.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
