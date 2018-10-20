@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: postgresql
-  host: localhost
+# host: localhost
   username: medshare
   password: admin
   pool: 5
