@@ -1,4 +1,5 @@
 class PinsController < ApplicationController
+	puts "PinsController"
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 
 	def index
@@ -52,5 +53,5 @@ class PinsController < ApplicationController
 	def find_pin
 		@pin = Pin.find(params[:id])
 	end
-
+	puts "PinsController end"
 end
