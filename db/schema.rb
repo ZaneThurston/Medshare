@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20181008223815) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "price"
+ #   t.integer  "price"
     t.string   "condition"
     t.string   "location"
     t.index ["user_id"], name: "index_pins_on_user_id", using: :btree
