@@ -7,4 +7,3 @@ $ ->
 		$('#pins').masonry
 			itemSelector: '.box'
 			percentPosition: true
-
