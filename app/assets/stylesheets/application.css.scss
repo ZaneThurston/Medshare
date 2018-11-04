@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .navbar-nav > li > a {
     color: #ffffff;
-    right: 60px;
+    position: center;
 }
 
 .navbar-header{
@@ -51,7 +51,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
-
+input {
+	margin-top: 4px;
+	margin-left: 2px;
+	line-height: 35px;
+	width: 440px;
+	font-weight: bold;
+	
+}
 nav {
 	background-color: #ffffff;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);

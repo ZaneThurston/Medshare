@@ -26,6 +26,9 @@ class PinsController < ApplicationController
 	def edit
 	end
 
+	def buy
+	end
+
 	def update
 		if @pin.update(pin_params)
 			redirect_to @pin, notice: "Pin updated!"
@@ -37,11 +40,6 @@ class PinsController < ApplicationController
 	def destroy
 		@pin.destroy
 		redirect_to root_path
-	end
-
-	def upvote
-		@pin.upvote_by current_user
-		redirect_to :back
 	end
 
 	private
