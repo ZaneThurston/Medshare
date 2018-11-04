@@ -1,13 +1,8 @@
 class Pin < ApplicationRecord
 	belongs_to :user
 	acts_as_votable
-
+	
 	has_attached_file :image, styles: { medium: "300x300>"}
 	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
-
-	def self.search(search)
-		if search
-		  find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
-		end
-	end	  
+  validates :description, length: { maximum: 140 }
 end

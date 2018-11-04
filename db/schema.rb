@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 20181008223815) do
   create_table "pins", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
+    t.string   "price"
+    t.string   "condition"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
@@ -25,9 +28,6 @@ ActiveRecord::Schema.define(version: 20181008223815) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "price"
-    t.string   "condition"
-    t.string   "location"
     t.index ["user_id"], name: "index_pins_on_user_id", using: :btree
   end
 
@@ -54,4 +54,19 @@ ActiveRecord::Schema.define(version: 20181008223815) do
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
+
+  create_table "votes", force: :cascade do |t|
+    t.string   "votable_type"
+    t.integer  "votable_id"
+    t.string   "voter_type"
+    t.integer  "voter_id"
+    t.boolean  "vote_flag"
+    t.string   "vote_scope"
+    t.integer  "vote_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
+    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
+  end
+
 end

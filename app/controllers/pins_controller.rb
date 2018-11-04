@@ -2,6 +2,9 @@ class PinsController < ApplicationController
 	puts "PinsController"
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 
+#Ações a serem feitas com um item: 
+
+
 	def index
 		@pins = Pin.all.order("created_at DESC")
 	end
@@ -39,10 +42,10 @@ class PinsController < ApplicationController
 		redirect_to root_path
 	end
 
-	def upvote
-		@pin.upvote_by current_user
-		redirect_to :back
-	end
+#	def upvote
+#		@pin.upvote_by current_user
+#		redirect_to :back
+#	end
 
 	def search
   		@pins = Pin.search(params[:search])
