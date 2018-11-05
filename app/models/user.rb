@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable, :omniauthable
-  has_many :pins
+  has_many :pins, dependent: :destroy
   validates :username, length: { maximum: 20 }
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -13,7 +13,4 @@ class User < ApplicationRecord
       #user.image = auth.info.image # assuming the user model has an image
     end
   end
-
-  #definir aqui um método para exclusão dos pins daquele usuário?  
-
 end
