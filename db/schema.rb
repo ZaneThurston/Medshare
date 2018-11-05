@@ -52,7 +52,6 @@ ActiveRecord::Schema.define(version: 20181023231856) do
     t.string   "address"
     t.integer  "number"
     t.string   "postalCode"
-    t.string   "conta"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end

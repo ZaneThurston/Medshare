@@ -18,6 +18,9 @@
 					=image_tag "chair.png"
 				.navbar-brand= link_to "MedShare", root_path
 			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				= simple_form_for(pins_path, method: :get, id:"search") do
+					= text_field_tag :search, params[:search], placeholder: "Pesquisar"
+					= submit_tag 'Search', class:'btn btn-default'			
 				- if user_signed_in?
 					%ul.nav.navbar-nav.navbar-right
 						%li= link_to "Cadastrar item", new_pin_path
