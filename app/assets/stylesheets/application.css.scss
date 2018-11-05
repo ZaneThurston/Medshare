@@ -23,7 +23,7 @@ body {
 }
 
 div {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,13 +51,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
-input {
-	margin-top: 4px;
+form {
+	height: 0px;
+	margin-top: 5px;
 	margin-left: 2px;
 	line-height: 35px;
-	width: 440px;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
 nav {
 	background-color: #ffffff;
@@ -72,20 +71,6 @@ nav {
 		}
 	}
 }
-
-//.map{
-//	padding-top: 70px;
-//	padding-left: 35px;
-//	position: fixed;
-//	float: left;
-//  	width: 70%;
-//  	
-//  	img{
-//  		border-style: solid;
-//    	border-width: 5px;
-//    	height: auto;
-//  	}
-//}
 
 #pins {
   padding-top: 70px;

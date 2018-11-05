@@ -3,7 +3,12 @@ class PinsController < ApplicationController
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 
 	def index
-		@pins = Pin.all.order("created_at DESC")
+		if params[:search] != "" && params[:search] != nil
+			@search = "%" + params[:search] +"%" 
+			@pins = Pin.where("title LIKE ? or description LIKE ? or location LIKE ?", @search, @search, @search)
+		else
+			@pins = Pin.all.order("created_at DESC")
+		end
 	end
 
 	def show
