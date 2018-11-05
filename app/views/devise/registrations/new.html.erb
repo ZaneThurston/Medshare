@@ -8,9 +8,12 @@
     <%= f.input :password, required: true, hint: ("Mínimo de #{@minimum_password_length} caracteres" if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true %>
     <%= f.input :name, required: true, autofocus: true %>
-    <%= f.input :address, required: true, autofocus: true %>
+    <%= f.input :address, required: true, autofocus: true %> <%= f.input :postalCode, required: true, autofocus: true %>
     <%= f.input :number, required: true, autofocus: true %>
     <%= f.input :phone, required: true, autofocus: true %>
+
+    <h3>Métodos de pagamento aceitos</h3><br>
+    <%= f.input :conta, required: true, autofocus: true %>
   </div>
 
   <div class="form-actions">

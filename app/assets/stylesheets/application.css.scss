@@ -23,7 +23,7 @@ body {
 }
 
 div {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,11 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     right: auto;
     display: block;
-//    padding: 0 20px;
-//    line-height: $nav-height;
-//    background: $nav-background;
-//    color: $nav-font-color;
-//    text-decoration: none;
+//    position: center;
 }
 
 .navbar-header{
@@ -68,7 +64,13 @@ h1, h2, h3, h4, h5, h6 {
 		height: relative;
 	}
 }
-
+form {
+	height: 0px;
+	margin-top: 5px;
+	margin-left: 2px;
+	line-height: 35px;
+	font-weight: bold;	
+}
 nav {
 	background-color: #ffffff;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
@@ -82,20 +84,6 @@ nav {
 		}
 	}
 }
-
-//.map{
-//	padding-top: 70px;
-//	padding-left: 35px;
-//	position: fixed;
-//	float: left;
-//  	width: 70%;
-//  	
-//  	img{
-//  		border-style: solid;
-//    	border-width: 5px;
-//    	height: auto;
-//  	}
-//}
 
 #pins {
   padding-top: 70px;

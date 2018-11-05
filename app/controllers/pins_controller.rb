@@ -6,7 +6,12 @@ class PinsController < ApplicationController
 
 
 	def index
-		@pins = Pin.all.order("created_at DESC")
+		if params[:search] != "" && params[:search] != nil
+			@search = "%" + params[:search] +"%" 
+			@pins = Pin.where("title LIKE ? or description LIKE ? or location LIKE ?", @search, @search, @search)
+		else
+			@pins = Pin.all.order("created_at DESC")
+		end
 	end
 
 	def show
@@ -29,6 +34,9 @@ class PinsController < ApplicationController
 	def edit
 	end
 
+	def buy
+	end
+
 	def update
 		if @pin.update(pin_params)
 			redirect_to @pin, notice: "Pin updated!"
@@ -41,16 +49,7 @@ class PinsController < ApplicationController
 		@pin.destroy
 		redirect_to root_path
 	end
-
-#	def upvote
-#		@pin.upvote_by current_user
-#		redirect_to :back
-#	end
-
-	def search
-  		@pins = Pin.search(params[:search])
-	end
-
+  
 	private
 
 	def pin_params;
