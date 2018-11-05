@@ -38,9 +38,22 @@ h1, h2, h3, h4, h5, h6 {
   	z-index: 1;
 }
 
+.navbar-default .navbar-nav > ul {
+    float:center;
+    width:auto;
+    height:auto;
+}
+
+.navbar-default .navbar-nav > li {
+    float:center;
+    width:auto;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: #ffffff;
-    position: center;
+    right: auto;
+    display: block;
+//    position: center;
 }
 
 .navbar-header{
@@ -48,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 		position: relative; 
         top: -15px;
 		width: 50px;
+		height: relative;
 	}
-
 }
 form {
 	height: 0px;
@@ -66,7 +79,7 @@ nav {
 			color: #ffffff;
 			font-weight: bold;
 			&:hover {
-				text-decoration: none;
+				text-decoration:  none;
 			}
 		}
 	}
@@ -78,7 +91,7 @@ nav {
   width: 100%;
   float: relative;
   .box {
-  	  padding: 4px 4px 4px 4px;
+  	padding: 4px 4px 4px 4px;
 	  margin: 10px;
 	  width: 300px;
 	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
@@ -115,19 +128,27 @@ nav {
 }
 
 #pin_show {
+	width: auto;
+  position: absolute; 
+	margin: 0 0 0 0;
 	.panel-heading {
 		padding: 0;
 	}
 	.pin_image {
 		img {
 			max-width: 75%;
-			width: 50%;
+			width: auto;
 			display: block;
 			margin: 0 auto;
 		}
 	}
+	.panel-default {
+		width: 95%;
+		margin: 0 auto;
+		position: relative;
+	}
 	.panel-body {
-		padding: 35px;
+		padding: 15px;		
 		h1 {
 			margin: 0 0 10px 0;
 		}

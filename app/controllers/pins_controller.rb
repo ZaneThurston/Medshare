@@ -2,6 +2,9 @@ class PinsController < ApplicationController
 	puts "PinsController"
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 
+#Ações a serem feitas com um item: 
+
+
 	def index
 		if params[:search] != "" && params[:search] != nil
 			@search = "%" + params[:search] +"%" 
@@ -46,7 +49,7 @@ class PinsController < ApplicationController
 		@pin.destroy
 		redirect_to root_path
 	end
-
+  
 	private
 
 	def pin_params;
