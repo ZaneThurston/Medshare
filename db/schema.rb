@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181023231856) do
+ActiveRecord::Schema.define(version: 20181106224251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "unaccent"
 
   create_table "pins", force: :cascade do |t|
     t.string   "title"
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 20181023231856) do
     t.integer  "price"
     t.string   "condition"
     t.string   "location"
+    t.string   "tags",               default: [], array: true
     t.index ["user_id"], name: "index_pins_on_user_id", using: :btree
   end
 

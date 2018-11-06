@@ -5,7 +5,8 @@ class PinsController < ApplicationController
 	def index
 		if params[:search] != "" && params[:search] != nil
 			@search = "%" + params[:search] +"%" 
-			@pins = Pin.where("title LIKE ? or description LIKE ? or location LIKE ?", @search, @search, @search)
+			word = @search.downcase
+			@pins = Pin.where("unaccent(LOWER(title)) ILIKE ? or unaccent(LOWER(description)) ILIKE ? or unaccent(LOWER(location)) ILIKE ?", word,word,word)
 		else
 			@pins = Pin.all.order("created_at DESC")
 		end
