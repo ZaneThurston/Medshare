@@ -1,22 +1,24 @@
 #pin_show.row
-	.col-md-8.col-md-offset-2
-		.panel.panel-default
-			.panel-heading.pin_image
-				= image_tag @pin.image.url
-			.panel-body
-				%h1= @pin.title
-				%h3.description= @pin.description
-				%h3 Preço: #{@pin.price}
-				%h3 Condição: #{@pin.condition}
-				%h3 Localização: #{@pin.location}
-	
-			.panel-footer
-				.row
-					.col-md-6
-						%p.user
-						Submitted by
-						= @pin.user.email
-					.col-md-6
-						.btn-group.pull-right
-							= link_to "Edit", edit_pin_path, class: "btn btn-default"
-							= link_to "Delete", pin_path, method: :delete, data: { confirm: "Really?"}, class: "btn btn-default"
+	.panel.panel-default
+		.panel-heading.pin_image
+			= image_tag @pin.image.url
+		.panel-body
+			%h2= @pin.title
+			%h4.description= @pin.description
+			%h4 Preço: #{@pin.price}
+			%h4 Condição: #{@pin.condition}
+			%h4 Localização: #{@pin.location}
+
+		.panel-footer
+			.row
+				.col-md-6
+					%p.user
+					Submitted by
+					= @pin.user.email
+				.col-md-6
+					.btn-group.pull-right
+						= link_to "Edit", edit_pin_path, class: "btn btn-default"
+						= link_to "Delete", pin_path, method: :delete, data: { confirm: "Certeza?"}, class: "btn btn-default"
+-#							= link_to Like_pin_path(@pin), method: :put, class: "btn btn-default" do
+-#								%span.glyphicon.glyphicon-heart
+-#									= @pin.get_upvotes.size
