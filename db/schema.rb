@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 20181106224251) do
   create_table "pins", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
+    t.string   "price"
+    t.string   "condition"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
@@ -26,10 +29,6 @@ ActiveRecord::Schema.define(version: 20181106224251) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "price"
-    t.string   "condition"
-    t.string   "location"
-    t.string   "tags",               default: [], array: true
     t.index ["user_id"], name: "index_pins_on_user_id", using: :btree
   end
 
@@ -54,7 +53,6 @@ ActiveRecord::Schema.define(version: 20181106224251) do
     t.string   "address"
     t.integer  "number"
     t.string   "postalCode"
-    t.string   "conta"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
