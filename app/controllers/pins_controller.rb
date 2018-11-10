@@ -16,6 +16,12 @@ class PinsController < ApplicationController
 	end
 
 	def show
+		@user = current_user
+		if @user == nil
+			@user = ""
+		else
+			@user = current_user.email
+		end
 	end
 
 	def new
