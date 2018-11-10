@@ -1,7 +1,9 @@
-<p>Olá <%= @resource.email %>!</p>
+<div class="main">
+	<p>Olá <%= @resource.email %>!</p>
 
-<p>Sua conta foi bloqueada por muitas tentativas de entrada sem sucesso.</p>
+	<p>Sua conta foi bloqueada por muitas tentativas de entrada sem sucesso.</p>
 
-<p>Clique no link abaixo para desbloquear sua conta:</p>
+	<p>Clique no link abaixo para desbloquear sua conta:</p>
 
-<p><%= link_to 'Desbloquear minha conta', unlock_url(@resource, unlock_token: @token) %></p>
+	<p><%= link_to 'Desbloquear minha conta', unlock_url(@resource, unlock_token: @token) %></p>
+</div>

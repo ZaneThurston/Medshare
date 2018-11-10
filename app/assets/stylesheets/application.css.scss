@@ -22,8 +22,11 @@ body {
 	background: #E9E9E9;
 }
 
-div {
-	margin-left: 5px;
+div.main {
+	margin-left: 20px;
+}
+div.render {
+	position:relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     right: auto;
     display: block;
-//    position: center;
+    position: center;
 }
 
 .navbar-header{
@@ -64,12 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 		height: relative;
 	}
 }
-form {
-	height: 0px;
-	margin-top: 5px;
-	margin-left: 2px;
-	line-height: 35px;
-	font-weight: bold;	
+form.search{
+	width: 300px;	
 }
 nav {
 	background-color: #ffffff;
