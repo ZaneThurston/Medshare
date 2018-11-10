@@ -19,7 +19,9 @@
 @import "bootstrap";
 
 body {
+	width: relative;
 	background: #E9E9E9;
+	height: 100000px;
 }
 
 div.main {
@@ -37,8 +39,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #27ae60;
     border-color: #bdc3c7;
     position: top;
-    width: 100%;
+    width: relative;
   	z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + #pins {
+  padding-top: 102px;
 }
 
 .navbar-default .navbar-nav > ul {
@@ -60,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-header{
+	width: 100%;
 	img{
 		position: relative; 
         top: -15px;
@@ -68,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 nav {
+	width: relative;
 	background-color: #ffffff;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	.navbar-brand {
@@ -82,13 +96,13 @@ nav {
 }
 
 #pins {
-  padding-top: 70px;
-  margin-left: 10%;
   width: 100%;
+  height: 100%;
   float: relative;
+  position: center;
   .box {
   	padding: 4px 4px 4px 4px;
-	  margin: 10px;
+	  margin: 20px;
 	  width: 300px;
 	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	  border-radius: 7px;
