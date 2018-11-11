@@ -33,4 +33,16 @@ pt-BR:
               blank: "Selecione o estado do produto"
             location:
               blank: "Campo obrigatório"
+        user:
+          attributes:
+            email:
+              taken: "Email já cadastrado"
+              invalid: "Email inválido"
+            password:
+              blank: "Preencha sua senha"
+            name:
+              blank: "Campo obrigatório"
+            phone:
+              blank: "Campo obrigatório"
+              not_a_number: "Campo deve ser númerico"
   hello: "Olá mundo!"

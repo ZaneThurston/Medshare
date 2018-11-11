@@ -160,7 +160,8 @@ Devise.setup do |config|
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
   #config.email_regexp = /\A[^@\s]+@[^@\s]+\z/
-  config.email_regexp = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+  #config.email_regexp = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+  config.email_regexp = /\A[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(gmail|live|hotmail|outlook|ig|yahoo|aol|uol|a|b)\.com.*/
   # config.omniauth :facebook, ENV['1976310612438593'], ENV['84a55ca2315ea7f8d248c0d04566b64c'], callback_url: "http://localhost:3000/users/auth/facebook/callback"
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this

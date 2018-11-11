@@ -15,7 +15,9 @@
 
 	.form-group
 		= f.input :description, label: "Descrição", input_html: { class: 'form-control' }
-		= f.input :price, label: "Preço", input_html: { class: 'form-control' }
-		= f.input :condition, label: 'Condição', collection: [['novo', 'Novo'] ,['semi', 'Semi-novo'],['usado', 'Usado']], as: :radio_buttons, label_method: :last, value_method: :first, checked: @pin.condition,item_wrapper_class: 'inline'		
+		= f.input :price, as: :currency, currency: "R$"
+		= f.input :condition, label: 'Condição', collection: [['Novo', 'Novo'] ,['Semi-novo', 'Semi-novo'],['Usado', 'Usado']], as: :radio_buttons, label_method: :last, value_method: :first, checked: @pin.condition,item_wrapper_class: 'inline'		
 		= f.input :location, label: "Cidade/Estado", input_html: { class: 'form-control' }
 		= f.button :submit, class: "btn btn-primary"
+		
+-#		= f.input :price, label: "Preço", input_html: { class: 'form-control' }		

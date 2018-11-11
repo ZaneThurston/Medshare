@@ -5,7 +5,7 @@
 		.panel-body
 			%h2= @pin.title
 			%h4.description= @pin.description
-			%h4 Preço: #{@pin.price}
+			%h4 Preço: R$ #{@pin.price}
 			%h4 Condição: #{@pin.condition}
 			%h4 Localização: #{@pin.location}
 
@@ -14,7 +14,7 @@
 				.col-md-6
 					%p.user
 					Enviado por
-					= @pin.name
+					= @pin.user.email
 				.col-md-6
 					.btn-group.pull-right
 						- if @pin.user.email == @user

@@ -5,6 +5,7 @@ class User < ApplicationRecord
   :recoverable, :rememberable, :trackable, :validatable, :omniauthable
   has_many :pins, dependent: :destroy
   validates :username, length: { maximum: 20 }
+  validates :email, :presence => true, :email => true
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
