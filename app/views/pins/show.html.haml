@@ -13,13 +13,13 @@
 			.row
 				.col-md-6
 					%p.user
-					Submitted by
-					= @pin.user.email
+					Enviado por
+					= @pin.name
 				.col-md-6
 					.btn-group.pull-right
 						- if @pin.user.email == @user
-							= link_to "Edit", edit_pin_path, class: "btn btn-default"
-							= link_to "Delete", pin_path, method: :delete, data: { confirm: "Certeza?"}, class: "btn btn-default"
+							= link_to "Editar", edit_pin_path, class: "btn btn-default"
+							= link_to "Deletar", pin_path, method: :delete, data: { confirm: "Certeza?"}, class: "btn btn-default"
 	-#							= link_to Like_pin_path(@pin), method: :put, class: "btn btn-default" do
 	-#								%span.glyphicon.glyphicon-heart
 	-#									= @pin.get_upvotes.size

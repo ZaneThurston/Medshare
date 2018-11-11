@@ -24,6 +24,10 @@ body {
 	height: 100000px;
 }
 
+form {
+	margin-right:20px;
+}
+
 div.main {
 	margin-left: 20px;
 }
@@ -41,6 +45,32 @@ h1, h2, h3, h4, h5, h6 {
     position: top;
     width: relative;
   	z-index: 1;
+}
+
+
+.container-search {
+	padding-bottom:5px;
+	margin:0 auto;
+	float:left;
+	width:auto;
+	
+	form {
+		padding-top:10px;
+		padding-left:15px;
+		margin:auto;
+		text-align:center;
+	}
+	
+	input#search {
+		width:300px;
+	}
+}
+
+@media screen and (max-width:767px){
+	.container-search {
+		float:left;
+		width:100%;
+	}
 }
 
 .sticky {
@@ -181,4 +211,11 @@ nav {
 
 textarea {
 	min-height: 250px;
+}
+
+#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+}
+
+f.collection_radio_buttons {
+	float:right;
 }

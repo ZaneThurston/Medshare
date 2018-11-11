@@ -1,7 +1,6 @@
 class PinsController < ApplicationController
 	puts "PinsController"
 	before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
-
 #Ações a serem feitas com um item: 
 
 
