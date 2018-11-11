@@ -18,8 +18,4 @@
 		= f.input :price, label: "Preço", input_html: { class: 'form-control' }
 		= f.input :condition, label: 'Condição', collection: [['novo', 'Novo'] ,['semi', 'Semi-novo'],['usado', 'Usado']], as: :radio_buttons, label_method: :last, value_method: :first, checked: @pin.condition,item_wrapper_class: 'inline'		
 		= f.input :location, label: "Cidade/Estado", input_html: { class: 'form-control' }
--#		= f.input :condition, label: "Condição", input_html: { class: 'form-control' }
--#		= f.collection_radio_buttons :condition, [['novo', 'Novo'] ,['semi', 'Semi-novo'],['usado', 'Usado']],:first, :last,item_wrapper_class: 'inline'
-
-
-	= f.button :submit, class: "btn btn-primary"
+	  = f.button :submit, class: "btn btn-primary"
