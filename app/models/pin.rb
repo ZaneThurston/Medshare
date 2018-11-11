@@ -4,4 +4,8 @@ class Pin < ApplicationRecord
 	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   validates :description, length: { maximum: 140 }
   validates :price, numericality: true
+  validates_presence_of :title
+  validates_presence_of :price
+  validates_presence_of :condition
+  validates_presence_of :location
 end

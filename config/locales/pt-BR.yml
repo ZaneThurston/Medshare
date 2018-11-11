@@ -18,6 +18,19 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 pt-BR:
+  activerecord:
+    errors:
+      models:
+        pin:
+          attributes:
+            title:
+              blank: "Campo obrigatório"
+            price:
+              not_a_number: "Campo deve ser numérico"
+              blank: "Campo obrigatório"
+            condition:
+              blank: "Selecione o estado do produto"
+            location:
+              blank: "Campo obrigatório"
   hello: "Olá mundo!"
